@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>黃翊瑄 | 個人專業履歷 | 屏科大工業管理系</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lucide/0.263.0/lucide.min.js"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700&display=swap');
+        
+        body {
+            font-family: 'Noto Sans TC', sans-serif;
+            scroll-behavior: smooth;
+        }
+
+        .hero-gradient {
+            background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 100%);
+        }
+
+        .skill-card:hover {
+            transform: translateY(-5px);
+            transition: all 0.3s ease;
+        }
+
+        .project-image-placeholder {
+            background-color: #e5e7eb;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 200px;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-900">
+
+    <!-- 導覽列 -->
+    <nav class="fixed w-full z-50 bg-white/80 backdrop-blur-md shadow-sm">
+        <div class="max-w-6xl mx-auto px-4 py-3 flex justify-between items-center">
+            <div class="text-xl font-bold text-blue-800">黃翊瑄 Yi-Hsuan Huang</div>
+            <div class="hidden md:flex space-x-8 font-medium">
+                <a href="#about" class="hover:text-blue-600 transition">關於我</a>
+                <a href="#skills" class="hover:text-blue-600 transition">專業技能</a>
+                <a href="#projects" class="hover:text-blue-600 transition">專案作品</a>
+                <a href="#contact" class="hover:text-blue-600 transition">聯絡方式</a>
+            </div>
+            <!-- 行動端選單按鈕 -->
+            <div class="md:hidden">
+                <i data-lucide="menu" class="w-6 h-6 cursor-pointer"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 英雄區 -->
+    <section id="home" class="hero-gradient pt-32 pb-20 px-4 text-white">
+        <div class="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between">
+            <div class="md:w-2/3 text-center md:text-left">
+                <h2 class="text-blue-200 font-semibold tracking-wider mb-2">國立屏東科技大學 | 工業管理系 大二學生</h2>
+                <h1 class="text-4xl md:text-6xl font-bold mb-6">我是<span class="text-yellow-400">黃翊瑄</span><br>致力於探索效率優化的無限可能</h1>
+                <p class="text-lg text-blue-100 mb-8 max-w-xl">
+                    專注於工業工程基礎與數據分析。目前正深入研究生產管理及統計工具，期待將課堂理論轉化為實際解決方案。
+                </p>
+                <div class="flex flex-wrap justify-center md:justify-start gap-4">
+                    <a href="#contact" class="bg-yellow-400 hover:bg-yellow-500 text-blue-900 px-8 py-3 rounded-full font-bold transition">與我聯絡</a>
+                    <a href="#about" class="border border-white hover:bg-white/10 px-8 py-3 rounded-full font-bold transition">個人簡介</a>
+                </div>
+            </div>
+            <div class="md:w-1/3 mt-12 md:mt-0 flex justify-center">
+                <div class="relative">
+                    <div class="w-64 h-64 bg-blue-400 rounded-full flex items-center justify-center border-8 border-white/20 overflow-hidden shadow-2xl">
+                         <i data-lucide="user" class="w-32 h-32 text-white"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 關於我 -->
+    <section id="about" class="py-20 px-4 bg-white">
+        <div class="max-w-4xl mx-auto text-center">
+            <h2 class="text-3xl font-bold mb-12 flex items-center justify-center gap-2">
+                <i data-lucide="info" class="text-blue-600"></i> 關於我
+            </h2>
+            <p class="text-lg text-slate-600 leading-relaxed mb-6">
+                你好！我是<strong>黃翊瑄</strong>，目前就讀於屏科大工業管理系二年級。在大二的階段，我正透過系統工程與生產系統分析建立穩固的專業基礎。我深信「凡是能被測量的，就能被改善」，目前正致力於學習 Python 與統計軟體，希望能從數據中挖掘提升效率的關鍵。
+            </p>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-6 mt-12">
+                <div class="p-4 rounded-lg bg-blue-50">
+                    <div class="text-2xl font-bold text-blue-700">精實</div>
+                    <div class="text-sm text-slate-500">思維導向</div>
+                </div>
+                <div class="p-4 rounded-lg bg-blue-50">
+                    <div class="text-2xl font-bold text-blue-700">數據</div>
+                    <div class="text-sm text-slate-500">決策分析</div>
+                </div>
+                <div class="p-4 rounded-lg bg-blue-50">
+                    <div class="text-2xl font-bold text-blue-700">品質</div>
+                    <div class="text-sm text-slate-500">嚴格管控</div>
+                </div>
+                <div class="p-4 rounded-lg bg-blue-50">
+                    <div class="text-2xl font-bold text-blue-700">效率</div>
+                    <div class="text-sm text-slate-500">全面提升</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 專業技能 -->
+    <section id="skills" class="py-20 px-4 bg-slate-50">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-3xl font-bold text-center mb-16">學習中的專業領域</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- 技能 1 -->
+                <div class="skill-card bg-white p-8 rounded-2xl shadow-sm border border-slate-100">
+                    <div class="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mb-6">
+                        <i data-lucide="settings" class="text-blue-600"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">生產管理基礎</h3>
+                    <ul class="space-y-2 text-slate-600">
+                        <li>• 作業研究 (OR) 基礎</li>
+                        <li>• 生產規劃初步</li>
+                        <li>• 作業測量與工作研究</li>
+                        <li>• 工廠佈置基礎</li>
+                    </ul>
+                </div>
+
+                <!-- 技能 2 -->
+                <div class="skill-card bg-white p-8 rounded-2xl shadow-sm border border-slate-100">
+                    <div class="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center mb-6">
+                        <i data-lucide="bar-chart-3" class="text-green-600"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">統計與品質分析</h3>
+                    <ul class="space-y-2 text-slate-600">
+                        <li>• 高等統計學應用</li>
+                        <li>• 統計製程管制 (SPC)</li>
+                        <li>• 資料收集與整理</li>
+                        <li>• 品質管理概論</li>
+                    </ul>
+                </div>
+
+                <!-- 技能 3 -->
+                <div class="skill-card bg-white p-8 rounded-2xl shadow-sm border border-slate-100">
+                    <div class="w-12 h-12 bg-purple-100 rounded-lg flex items-center justify-center mb-6">
+                        <i data-lucide="monitor" class="text-purple-600"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">資訊與數位工具</h3>
+                    <ul class="space-y-2 text-slate-600">
+                        <li>• Python 程式設計基礎</li>
+                        <li>• Excel 進階數據處理</li>
+                        <li>• ERP 基礎理論</li>
+                        <li>• AutoCAD 初階建模</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 專案展示區 -->
+    <section id="projects" class="py-20 px-4 bg-white">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-3xl font-bold text-center mb-16">學習紀錄與專題</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+                <div class="group">
+                    <div class="project-image-placeholder mb-6 group-hover:bg-slate-200 transition">
+                        <i data-lucide="factory" class="w-12 h-12 text-slate-400"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-2">生產系統優化案例分析</h3>
+                    <p class="text-slate-600 mb-4">
+                        在大二專題練習中，針對特定校園場域進行動線模擬與瓶頸分析，探討如何縮短作業流程時間。
+                    </p>
+                    <div class="flex gap-2">
+                        <span class="px-3 py-1 bg-blue-100 text-blue-700 text-sm rounded-full">工作研究</span>
+                        <span class="px-3 py-1 bg-blue-100 text-blue-700 text-sm rounded-full">動線分析</span>
+                    </div>
+                </div>
+
+                <div class="group">
+                    <div class="project-image-placeholder mb-6 group-hover:bg-slate-200 transition">
+                        <i data-lucide="pie-chart" class="w-12 h-12 text-slate-400"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-2">統計軟體分析練習</h3>
+                    <p class="text-slate-600 mb-4">
+                        運用課堂所學之統計分析方法，對生產數據進行顯著性檢定，判斷製程是否存在異常波動。
+                    </p>
+                    <div class="flex gap-2">
+                        <span class="px-3 py-1 bg-blue-100 text-blue-700 text-sm rounded-full">統計學</span>
+                        <span class="px-3 py-1 bg-blue-100 text-blue-700 text-sm rounded-full">SPC</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 聯絡方式 -->
+    <section id="contact" class="py-20 px-4 bg-slate-900 text-white">
+        <div class="max-w-4xl mx-auto text-center">
+            <h2 class="text-3xl font-bold mb-8">與黃翊瑄保持聯絡</h2>
+            <p class="text-slate-400 mb-12">我目前正積極尋找實習機會與專業交流。歡迎透過以下方式聯絡我！</p>
+            
+            <div class="flex flex-col md:flex-row justify-center items-center gap-8 mb-12">
+                <div class="flex items-center gap-3">
+                    <i data-lucide="mail" class="text-blue-400"></i>
+                    <span>hsuan.huang@mail.npust.edu.tw</span>
+                </div>
+                <div class="flex items-center gap-3">
+                    <i data-lucide="phone" class="text-blue-400"></i>
+                    <span>09xx-xxx-xxx</span>
+                </div>
+                <div class="flex items-center gap-3">
+                    <i data-lucide="graduation-cap" class="text-blue-400"></i>
+                    <span>NPUST IEM Sophomore</span>
+                </div>
+            </div>
+
+            <form class="max-w-lg mx-auto space-y-4">
+                <input type="text" placeholder="您的姓名" class="w-full px-4 py-3 rounded-lg bg-slate-800 border border-slate-700 focus:outline-none focus:border-blue-500">
+                <input type="email" placeholder="電子郵件" class="w-full px-4 py-3 rounded-lg bg-slate-800 border border-slate-700 focus:outline-none focus:border-blue-500">
+                <textarea placeholder="想對翊瑄說的話" rows="4" class="w-full px-4 py-3 rounded-lg bg-slate-800 border border-slate-700 focus:outline-none focus:border-blue-500"></textarea>
+                <button type="button" class="w-full bg-blue-600 hover:bg-blue-700 py-3 rounded-lg font-bold transition">傳送訊息</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- 頁尾 -->
+    <footer class="py-8 bg-slate-950 text-slate-500 text-center text-sm">
+        <p>© 2024 黃翊瑄 | 國立屏東科技大學 工業管理系</p>
+    </footer>
+
+    <script>
+        // 初始化 Lucide 圖示
+        lucide.createIcons();
+
+        // 點擊跳轉平滑滾動
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
