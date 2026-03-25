@@ -43,6 +43,9 @@
                 <a href="#about" class="hover:text-blue-600 transition">關於我</a>
                 <a href="#skills" class="hover:text-blue-600 transition">專業技能</a>
                 <a href="#projects" class="hover:text-blue-600 transition">專案作品</a>
+                <a href="colab.html" class="text-orange-600 font-bold hover:text-orange-700 transition flex items-center gap-1">
+                    <i data-lucide="code-2" class="w-4 h-4"></i> Colab 實作
+                </a>
                 <a href="#contact" class="hover:text-blue-600 transition">聯絡方式</a>
             </div>
             <!-- 行動端選單按鈕 -->
@@ -62,8 +65,10 @@
                     專注於工業工程基礎與數據分析。目前正深入研究生產管理及統計工具，期待將課堂理論轉化為實際解決方案。
                 </p>
                 <div class="flex flex-wrap justify-center md:justify-start gap-4">
-                    <a href="#contact" class="bg-yellow-400 hover:bg-yellow-500 text-blue-900 px-8 py-3 rounded-full font-bold transition">與我聯絡</a>
-                    <a href="#about" class="border border-white hover:bg-white/10 px-8 py-3 rounded-full font-bold transition">個人簡介</a>
+                    <a href="colab.html" class="bg-orange-500 hover:bg-orange-600 text-white px-8 py-3 rounded-full font-bold shadow-lg transition flex items-center gap-2">
+                        <i data-lucide="external-link" class="w-5 h-5"></i> 查看我的 Colab 筆記
+                    </a>
+                    <a href="#contact" class="bg-white/10 border border-white hover:bg-white/20 px-8 py-3 rounded-full font-bold transition">與我聯絡</a>
                 </div>
             </div>
             <div class="md:w-1/3 mt-12 md:mt-0 flex justify-center">
@@ -86,19 +91,19 @@
                 你好！我是<strong>黃翊瑄</strong>，目前就讀於屏科大工業管理系二年級。在大二的階段，我正透過系統工程與生產系統分析建立穩固的專業基礎。我深信「凡是能被測量的，就能被改善」，目前正致力於學習 Python 與統計軟體，希望能從數據中挖掘提升效率的關鍵。
             </p>
             <div class="grid grid-cols-2 md:grid-cols-4 gap-6 mt-12">
-                <div class="p-4 rounded-lg bg-blue-50">
+                <div class="p-4 rounded-lg bg-blue-50 border border-blue-100">
                     <div class="text-2xl font-bold text-blue-700">精實</div>
                     <div class="text-sm text-slate-500">思維導向</div>
                 </div>
-                <div class="p-4 rounded-lg bg-blue-50">
+                <div class="p-4 rounded-lg bg-blue-50 border border-blue-100">
                     <div class="text-2xl font-bold text-blue-700">數據</div>
                     <div class="text-sm text-slate-500">決策分析</div>
                 </div>
-                <div class="p-4 rounded-lg bg-blue-50">
+                <div class="p-4 rounded-lg bg-blue-50 border border-blue-100">
                     <div class="text-2xl font-bold text-blue-700">品質</div>
                     <div class="text-sm text-slate-500">嚴格管控</div>
                 </div>
-                <div class="p-4 rounded-lg bg-blue-50">
+                <div class="p-4 rounded-lg bg-blue-50 border border-blue-100">
                     <div class="text-2xl font-bold text-blue-700">效率</div>
                     <div class="text-sm text-slate-500">全面提升</div>
                 </div>
@@ -141,16 +146,19 @@
 
                 <!-- 技能 3 -->
                 <div class="skill-card bg-white p-8 rounded-2xl shadow-sm border border-slate-100">
-                    <div class="w-12 h-12 bg-purple-100 rounded-lg flex items-center justify-center mb-6">
-                        <i data-lucide="monitor" class="text-purple-600"></i>
+                    <div class="w-12 h-12 bg-orange-100 rounded-lg flex items-center justify-center mb-6">
+                        <i data-lucide="code-2" class="text-orange-600"></i>
                     </div>
                     <h3 class="text-xl font-bold mb-4">資訊與數位工具</h3>
-                    <ul class="space-y-2 text-slate-600">
+                    <ul class="space-y-2 text-slate-600 mb-6">
                         <li>• Python 程式設計基礎</li>
                         <li>• Excel 進階數據處理</li>
                         <li>• ERP 基礎理論</li>
                         <li>• AutoCAD 初階建模</li>
                     </ul>
+                    <a href="colab.html" class="inline-flex items-center text-sm font-bold text-orange-600 hover:text-orange-700">
+                        點此查看程式作品集 <i data-lucide="chevron-right" class="w-4 h-4 ml-1"></i>
+                    </a>
                 </div>
             </div>
         </div>
@@ -204,13 +212,13 @@
                     <span>hsuan.huang@mail.npust.edu.tw</span>
                 </div>
                 <div class="flex items-center gap-3">
-                    <i data-lucide="phone" class="text-blue-400"></i>
-                    <span>09xx-xxx-xxx</span>
-                </div>
-                <div class="flex items-center gap-3">
                     <i data-lucide="graduation-cap" class="text-blue-400"></i>
                     <span>NPUST IEM Sophomore</span>
                 </div>
+                <a href="colab.html" class="flex items-center gap-3 hover:text-orange-400 transition">
+                    <i data-lucide="file-code" class="text-orange-400"></i>
+                    <span>查看我的 Colab 筆記</span>
+                </a>
             </div>
 
             <form class="max-w-lg mx-auto space-y-4">
@@ -234,10 +242,12 @@
         // 點擊跳轉平滑滾動
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                document.querySelector(this.getAttribute('href')).scrollIntoView({
-                    behavior: 'smooth'
-                });
+                if (this.getAttribute('href').startsWith('#')) {
+                    e.preventDefault();
+                    document.querySelector(this.getAttribute('href')).scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                }
             });
         });
     </script>
